@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¡Atrapa las frutas!</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <!-- ENCABEZADO -->
+        <header class="encabezado">
+            <p class="etiqueta">🍃 MINIJUEGO · NIVEL 01 🍃</p>
+
+            <h1>🍓 ¡Atrapa las frutas! 🍎</h1>
+
+            <p class="descripcion">
+                ¡Mueve tu cesta y atrapa tantas frutas como puedas!
+            </p>
+        </header>
+
+        <!-- MARCADOR -->
+        <section class="marcador">
+
+            <article class="dato">
+                <span>🏆 PUNTOS</span>
+                <strong id="puntos">000</strong>
+            </article>
+
+            <article class="dato">
+                <span>❤️ VIDAS</span>
+                <strong id="vidas">♥️ ♥️ ♥️</strong>
+            </article>
+
+            <article class="dato">
+                <span>⏱️ TIEMPO</span>
+                <strong id="tiempo">60 s</strong>
+            </article>
+
+        </section>
+
+        <!-- ÁREA DEL JUEGO -->
+        <section class="panel-juego">
+
+            <p class="mensaje" id="mensaje">
+                ¡Presiona JUGAR para comenzar!
+            </p>
+
+            <canvas id="juego" width="800" height="450">
+                Tu navegador no admite Canvas.
+            </canvas>
+
+            <div class="controles">
+                <button id="izquierda" type="button"
+                        aria-label="Mover a la izquierda">
+                    ⬅️
+                </button>
+
+                <span>Mueve tu cesta</span>
+
+                <button id="derecha" type="button"
+                        aria-label="Mover a la derecha">
+                    ➡️
+                </button>
+            </div>
+
+        </section>
+
+        <!-- BOTONES -->
+        <nav class="botones">
+
+            <button id="iniciar" class="btn jugar" type="button">
+                ▶️ JUGAR
+            </button>
+
+            <button id="pausar" class="btn pausar" type="button">
+                Ⅱ PAUSAR
+            </button>
+
+            <button id="reiniciar" class="btn reiniciar" type="button">
+                ↻ REINICIAR
+            </button>
+
+        </nav>
+
+        <!-- INSTRUCCIONES -->
+        <section class="instrucciones">
+
+            <h2>📋 ¿Cómo jugar?</h2>
+
+            <ul>
+                <li>Usa las flechas izquierda y derecha para mover la cesta.</li>
+                <li>Atrapa las frutas para conseguir puntos.</li>
+                <li>Evita dejar caer demasiadas frutas.</li>
+                <li>Consigue la mayor puntuación antes de que termine el tiempo.</li>
+            </ul>
+
+        </section>
+
+        <footer>
+            <p>🎮 Proyecto de Diseño y Programación Web I</p>
+        </footer>
+
+    </main>
+  <script src="js/codigo.js"></script>
+
+</body>
+</html>
